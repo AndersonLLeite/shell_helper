@@ -14,7 +14,7 @@ def rewrite_api_key():
         try:
             # Verifica se a chave de API é válida
             openai.api_key = api_key
-            openai.Completion.create(engine="text-davinci-002", prompt="Teste")
+            openai.Completion.create(engine="text-davinci-003", prompt="Teste")
         except Exception as e:
             print(f"Chave de API inválida: {e}")
             api_key = ""
